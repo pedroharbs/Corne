@@ -76,7 +76,7 @@
 &kp TAB         &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U  &kp I                &kp O                    &kp P                &kp BSPC
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J  &kp K                &kp L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH   &mt PIPE BACKSLASH
-                              &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 2  &mo 1
+                              &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 1  &kp RIGHT_ALT
             >;
         };
 
@@ -88,25 +88,10 @@
             //                    |     |     | SPC |   | SPC |     |     |
 
             bindings = <
-&kp ESCAPE       &trans  &trans  &trans          &trans          &trans             &kp N7        &kp N8        &kp N9        &trans  &trans  &trans
-&mt TILDE GRAVE  &trans  &trans  &trans          &trans          &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans  &trans
-&trans           &trans  &trans  &trans          &trans          &kp UP_ARROW       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans
-                                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp ENTER     &kp N0        &trans
-            >;
-        };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  &  |  %  |   |  ^  |  $  |  *  |  (  |  )  | BSPC |
-            // | CTRL |MUTE |V_UP |V_DWN|  <  |  >  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | SPC |     | ALT |
-
-            bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET               &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt UNDERSCORE MINUS  &mt PLUS EQUAL
-&trans           &trans       &trans    &kp C_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                &trans                 &trans                &trans
-&trans           &trans       &trans    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans                &trans                 &trans                &trans
-                                        &kp LGUI    &trans                &kp SPACE               &kp ENTER         &trans             &kp RALT
+&kp ESCAPE       &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3     &mt DOLLAR NUMBER_4   &mt PERCENT N5     &mt CARET NUMBER_6  &mt AMPERSAND N7   &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &mt UNDERSCORE MINUS
+&mt TILDE GRAVE  &trans                    &trans                &kp K_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans           &trans                   &trans                    &mt PLUS EQUAL
+&kp CAPSLOCK     &trans                    &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp UP_ARROW       &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp C_AC_HOME    &kp END                  &trans                    &trans
+                                                                 &kp LEFT_ARROW        &kp DOWN_ARROW        &kp RIGHT_ARROW    &kp ENTER           &trans             &trans
             >;
         };
     };
