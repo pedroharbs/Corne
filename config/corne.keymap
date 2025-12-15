@@ -73,10 +73,10 @@
             //                    | GUI | LWR | SPC |   | SPC | L2   | L1  |
 
             bindings = <
-&mt ESCAPE TAB      &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U  &kp I                &kp O                    &kp P                &kp BSPC
-&kp LEFT_SHIFT      &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J  &kp K                &kp L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
-&mt CAPSLOCK LCTRL  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH   &mt PIPE BACKSLASH
-                                  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 1  &kp RIGHT_ALT
+&mt ESCAPE TAB  &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U  &kp I                &kp O                    &kp P                &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J  &kp K                &kp L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH   &mt PIPE BACKSLASH
+                              &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 1  &kp RIGHT_ALT
             >;
         };
 
@@ -90,7 +90,7 @@
             bindings = <
 &mt TILDE GRAVE  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3     &mt DOLLAR NUMBER_4   &mt PERCENT N5     &mt CARET NUMBER_6  &mt AMPERSAND N7   &mt ASTERISK N8       &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &mt UNDERSCORE MINUS
 &trans           &trans                    &trans                &kp K_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans                    &mt PLUS EQUAL
-&trans           &trans                    &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp UP_ARROW       &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp HOME              &kp END                  &kp DELETE                &trans
+&kp CAPS         &trans                    &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp UP_ARROW       &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp HOME              &kp END                  &kp DELETE                &trans
                                                                  &kp LEFT_ARROW        &kp DOWN_ARROW        &kp RIGHT_ARROW    &kp ENTER           &trans             &trans
             >;
         };
